@@ -1,21 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+}
 .main{
     background-image: url("images/bg_image.jpg");
-    background-position: center ;
+    
     background-repeat: no-repeat;
     background-size: max(1370px,100vh);
-    height: 100vh;
+    height: 103vh;
     position: relative;
 }
 .main .box{
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    opacity: 0.6;
-    background-color: black;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
     position: absolute;
     top: 0;
 }
@@ -33,8 +36,8 @@
      margin-top: 2rem;
 }
 nav{
-    margin: 0 auto;
     max-width: 80vw;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,17 +49,21 @@ nav{
     color: white;
     font-size: 56px;
     text-align: center;
+    line-height: 70px;
+    font-weight: 900;
 }
 .middlecontent{
     position: relative;
-    top: 30%;
-    max-width: 550px;
+    height: 100%;
+    max-width: 700px;
+    top: 150px;
     margin: auto;
-    font-weight: 800;
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: white;
+    color:rgb(255, 255, 255);
+    font-family: "Martel Sans", sans-serif;
+    padding: 2rem;
 }
 .start_content{
     
@@ -73,4 +80,26 @@ nav{
 }
 .start_btn{
     background-color: red;
+}
+.curve_in{
+    height: 10vh;
+    width: 100%;
+    background: linear-gradient(to right,black,rgb(131, 2, 77),red,rgb(131, 2, 77),black);
+    position: relative;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.curve_out{
+    height: 90%;
+    width: 100%;
+    background: radial-gradient(ellipse at 50% 0,rgb(6, 6, 49),black 50%);
+    position: absolute;
+    top: 10%;
+    border-top-left-radius:45% ;
+    border-top-right-radius: 45%;
+}
+.curve_container {
+    position: absolute;
+    height: 300px; /* or whatever you want */
+    width: 100%;
 }
