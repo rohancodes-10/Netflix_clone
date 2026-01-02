@@ -211,7 +211,9 @@ nav{
     border-radius: 10px;
     padding: 1rem 0.7rem;
     position: relative;
-   
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 @media screen and (max-width:1282px) {
     .iconcard_container{
@@ -237,4 +239,17 @@ nav{
 }
 .more_title{
     color: white;
+}
+.iconcard_title{
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+}
+.iconcard_para{
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+.profile{
+    border-radius: 10px;
 }
