@@ -257,6 +257,7 @@ nav{
     margin: 0 auto;
      max-width: 1015px;
      display: flex;
+     gap: 10px;
      flex-direction: column;
 }
 .questions{
